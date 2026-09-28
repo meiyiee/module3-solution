@@ -69,9 +69,25 @@ body {
   border: 1px solid #ccc;
 }
 
-/* Force mobile menu items to stay hidden on desktop and tablet */
-@media (min-width: 768px) {
-  #bs-example-navbar-collapse-1 {
-    display: none !important;
-  }
+/* Mobile Dropdown Styling Fix */
+.navbar-collapse {
+  background-color: #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+}
+
+.navbar-nav {
+  margin: 0 -15px;
+}
+
+.navbar-nav > li > a {
+  color: #333 !important;
+  font-size: 18px;
+  border-top: 1px solid #ccc;
+  background-color: #e7e7e7;
+}
+
+/* Ensure navbar clears content below it */
+.navbar {
+  clear: both;
+  margin-bottom: 30px;
 }
