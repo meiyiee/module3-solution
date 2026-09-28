@@ -1,0 +1,70 @@
+/* Base Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Navbar Custom Styling */
+.navbar {
+  border-radius: 0;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555 !important;
+}
+
+/* Mobile Dropdown Styling */
+.navbar-collapse {
+  background-color: #e7e7e7;
+}
+
+.navbar-nav > li > a {
+  color: #333 !important;
+  font-size: 18px;
+  border-top: 1px solid #ccc;
+}
+
+/* Menu Item Containers */
+.menu-item {
+  background-color: #a5a5a5;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding: 15px;
+  position: relative;
+}
+
+.item-title {
+  margin-top: -15px;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.title-chicken {
+  background-color: #d9534f;
+  color: white;
+}
+
+.title-beef {
+  background-color: #c0392b;
+  color: white;
+}
+
+.title-sushi {
+  background-color: #f39c12;
+  color: white;
+}
+
+/* Tall Section Requirement */
+.tall-section {
+  background-color: #e0e0e0;
+  height: 1000px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
