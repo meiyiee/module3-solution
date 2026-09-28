@@ -68,3 +68,10 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
 }
+
+/* Force mobile menu items to stay hidden on desktop and tablet */
+@media (min-width: 768px) {
+  #bs-example-navbar-collapse-1 {
+    display: none !important;
+  }
+}
