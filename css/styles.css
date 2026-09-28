@@ -7,9 +7,10 @@ body {
 /* Navbar Custom Styling */
 .navbar {
   border-radius: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+  clear: both;
 }
 
 .navbar-brand {
@@ -18,15 +19,29 @@ body {
   color: #555 !important;
 }
 
-/* Mobile Dropdown Styling */
+/* Mobile Dropdown Styling & Layout Fix */
 .navbar-collapse {
   background-color: #e7e7e7;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.navbar-nav {
+  margin: 0 -15px;
 }
 
 .navbar-nav > li > a {
   color: #333 !important;
   font-size: 18px;
   border-top: 1px solid #ccc;
+  background-color: #e7e7e7;
+}
+
+/* Force mobile dropdown to hide on desktop/tablet views */
+@media (min-width: 768px) {
+  #bs-example-navbar-collapse-1 {
+    display: none !important;
+  }
 }
 
 /* Menu Item Containers */
@@ -67,27 +82,4 @@ body {
   margin-top: 20px;
   padding: 20px;
   border: 1px solid #ccc;
-}
-
-/* Mobile Dropdown Styling Fix */
-.navbar-collapse {
-  background-color: #e7e7e7;
-  border-top: 1px solid #e7e7e7;
-}
-
-.navbar-nav {
-  margin: 0 -15px;
-}
-
-.navbar-nav > li > a {
-  color: #333 !important;
-  font-size: 18px;
-  border-top: 1px solid #ccc;
-  background-color: #e7e7e7;
-}
-
-/* Ensure navbar clears content below it */
-.navbar {
-  clear: both;
-  margin-bottom: 30px;
 }
